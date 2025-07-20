@@ -1,0 +1,446 @@
+/* جعل القائمة متجاوبة */
+@media (max-width: 768px) {
+    header {
+        padding-left: 1rem !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-item {
+        width: 100%;
+        text-align: right;
+    }
+}
+
+/* تعديل قسم البطل (Hero) */
+@media (max-width: 576px) {
+    #hero {
+        height: 60vh !important;
+        background-position: center;
+    }
+    
+    .display-4 {
+        font-size: 2rem !important;
+    }
+    
+    .lead {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* تعديل عرض بطاقات المنتجات */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* تعديل فوائد العسل */
+@media (max-width: 992px) {
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* تعديل أقسام استخراج العسل */
+@media (max-width: 768px) {
+    .honey-extraction .row {
+        flex-direction: column-reverse;
+    }
+    
+    .honey-extraction .col-lg-4 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* تعديل الفوتر */
+@media (max-width: 768px) {
+    footer .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+}
+
+/* تحسين النصوص للجوال */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1, h2, h3 {
+        font-size: 1.5rem !important;
+    }
+}
+/* منع التكبير عند النقر على حقول الإدخال */
+@media (max-width: 576px) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* إصلاح مشكلة التمرير الأفقي */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* تحسين الصور للجوال */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Header section style*/
+.fs-4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffd901;
+   
+}
+header {
+    background-color: #fff3e0;
+    border-bottom: 1px solid #ffd901;
+    padding-left: 45rem;
+    gap: 5px;
+}
+.nav{
+    gap: 2px; /*تباعد العناصر في القائمة*/
+}
+
+/* Hero section */
+#hero {
+    background-image: url(" ./ChatGPT Image 19 يوليو 2025، 03_13_43 م.png" ) ;
+    background-size: cover;
+    background-position: center;
+    height: 160vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+/*products section */
+.products{
+    background-color: #bea200;
+    padding: 50px 0;
+}
+
+
+
+/* benifit of honey */
+/* Benefits Cards Grid Layout */
+.benefits-text {
+    text-align: center;
+    padding: 2rem;
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 2rem;
+    padding: 4rem 2rem; 
+    background-color: #ffe79a;
+}
+
+/* Card Styling */
+.benefits .card {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.benefits .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Container */
+.benefits .icon-container {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(255, 166, 0);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Text Styling */
+.benefits h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.benefits p {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.5;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/** فقرة هل تعلم */
+.honey-fact {
+    display: grid;
+    gap: 2rem;
+    padding: 4rem 2rem; 
+    background-color: #ffe79a;
+}
+
+
+/* قسم كيف يستخرج العسل */
+.shadow-lg .rounded-lg-3 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.shadow-lg .rounded-lg-3:hover {
+    transform: scale(1.02);
+}
+
+.overflow-hidden {
+    border-radius: 15px;
+    margin: 20px;
+    max-width: 500px;
+    max-height: 400px;
+}
+
+/* تحسين تنسيق القسم بأكمله */
+.container .shadow-lg {
+    background-color: #ff8724;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.honey-extraction {
+    background-color: #ffc400;
+    padding: 4rem 2rem;
+}
+.container-text-center-extraction{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+
+}
+
+
+/*معلومات */
+.shadow-soft {
+    --tw-shadow: var(--shadow-soft);
+    --tw-shadow-colored: var(--shadow-soft);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/*Footer*/
+/* Footer Styling */
+.footer {
+    background-color: #4a1e1b;
+    color: #fff;
+    padding: 4rem 0;
+}
+
+/* Logo Container */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Footer Grid Layout */
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Footer Sections */
+/* Footer Enhancements */
+footer.bg-warm-brown {
+    background-color: #4a1e1b;
+    color: white;
+    padding: 3rem 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+footer .space-y-4 > h4 {
+    color: #ffd901;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+footer ul.space-y-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+footer ul.space-y-2 a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s;
+}
+
+footer ul.space-y-2 a:hover {
+    color: #ffd901;
+}
+
+footer .flex.items-center.space-x-2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .w-10.h-10 {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #ffd901, #ff9800);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer .text-2xl.font-bold {
+    color: #ffd901;
+    font-size: 1.5rem;
+}
+
+footer .text-white\/80 {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+footer .flex.space-x-4 {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .h-10.w-10 {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+footer .h-10.w-10:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+footer input.bg-white\/20 {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 4px;
+    width: 170%;
+    margin-bottom: 1rem;
+}
+
+footer input.bg-white\/20::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer button.bg-gradient-honey {
+    background: linear-gradient(to right, #ffd901, #ff9800);
+    color: #4a1e1b;
+    font-weight: 600;
+    padding: 0.75rem;
+    border-radius: 4px;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+footer button.bg-gradient-honey:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer .border-t {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+footer .text-white\/60 {
+    color: rgba(255, 255, 255, 0.6);
+}
+/* إزالة الخطوط التحتية من جميع الروابط في الفوتر */
+footer a {
+    text-decoration: none !important;
+}
+
+
+
+/* إزالة الخطوط من روابط وسائل التواصل الاجتماعي */
+footer .h-10.w-10 svg {
+    text-decoration: none !important;
+}
+
+/* إزالة الخطوط من روابط القوائم */
+footer ul.space-y-2 a {
+    text-decoration: none !important;
+}
+
